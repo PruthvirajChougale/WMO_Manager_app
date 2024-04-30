@@ -81,6 +81,7 @@ span{
     background-color: #fff;
     display:flex;
     border-radius: 10px;
+    margin-bottom:1.5rem;
 }
 #search{
     display:flex;
@@ -126,3 +127,24 @@ h1{
     top:25px;
     color:#f1758a;
 }
+
+/* budget tracker table */
+#budget_tracker{
+    width:100vw;
+    background-color: #fff;
+    border-radius: 10px;
+}
+#budget_tracke th{
+    padding:50px;
+}
+#budget_tracker table{
+    width:100%;
+}
+thead{
+   background-color: #f1758a;
+}
+tbody{
+    text-align: center;
+}
+
+/* main body of dashboard */
