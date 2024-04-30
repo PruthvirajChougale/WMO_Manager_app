@@ -1,0 +1,77 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    
+}
+#sidebar{
+    position:fixed;
+    width:15rem;
+    left:-15rem;
+    height:100vh;
+    color:#fff;
+    background-color:rgb(161, 95, 223);
+    transition:all 0.4s ease-in 0s;
+    z-index: 1;
+}
+#my_logo{
+    height:50px;
+}
+
+li{ border-radius: 10px;
+    margin:0 1.5rem 0 1.5rem;
+    padding:1.5rem;
+    list-style: none;
+}
+li:hover,
+#dash{
+    background-color:#e0e0e058;
+}
+
+#bars{
+    padding: 2px;
+position:absolute;
+top:1rem;
+left:1rem;
+font-size: 1.5rem;
+color:#FF5F1F;
+border:1px solid black;
+border-radius: 5px;
+}
+#mark{
+    z-index:2;
+    position:absolute;
+    left:-5rem;
+    top:1rem;
+    font-size: 1.5rem;
+    background-color:rgb(161, 95, 223);
+    color:#fff;
+    transition:all 0.4s ease-in 0s;
+}
+span{
+    padding-left: 1rem;
+}
+#check{
+    display:none;
+}
+#check:checked~ #sidebar{
+    left:0;
+}
+#check:checked~ label #mark{
+  left:13rem;
+}
+#check:checked~ label #bars{
+    display:none;
+}
+/* main page */
+#main{
+    height:100%;
+    width:100%;
+    background-color: #898686;
+}
+#header{
+    height:250px;
+    width:100%;
+    background-color: #fff;
+}
