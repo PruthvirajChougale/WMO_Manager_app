@@ -19,40 +19,33 @@
           MY MENU
         </div>
         <ul class="side_items">
-            <li id="dash">
+            <li class="list-items" id="dash">
                 <i class="fa-solid fa-table-cells-large"></i>
                 <span>Dashboard</span>
             </li>
-            <li>
-                
-                    <i class="fa-solid fa-user"></i>
-                    <span>Profile</span>   
-                
+            <li class="list-items">
+                <i class="fa-solid fa-user"></i>
+                <span>Profile</span>   
             </li>
-            <li>
-                
-                    <i class="fa-solid fa-comments"></i>
-                    <span>Messages</span>
+            <li class="list-items">
+                <i class="fa-solid fa-comments"></i>
+                <span>Messages</span>
             </li>
-            <li>
-                
-                    <i class="fa-solid fa-phone"></i>
+            <li class="list-items">
+                <i class="fa-solid fa-phone"></i>
                 <span>Contacts</span>
             </li>
-            <li>
-               
-                    <i class="fa-solid fa-bell"></i>
-                    <span>Notifications</span>
+            <li class="list-items">
+               <i class="fa-solid fa-bell"></i>
+                <span>Notifications</span>
             </li>
-            <li>
-                    <i class="fa-solid fa-gear"></i>
-                    <span>Settings</span>
+            <li class="list-items">
+                <i class="fa-solid fa-gear"></i>
+                <span>Settings</span>
             </li>
-            <li>
-                
-                    <i class="fa-solid fa-arrow-right-from-bracket"></i>
+            <li class="list-items">
+                <i class="fa-solid fa-arrow-right-from-bracket"></i>
                 <span>Log out</span>
-                
             </li>
         </ul>
     </div>
@@ -65,7 +58,7 @@
             </div>
             <div id="empty"></div>
             <div id="title">
-                <b>MY</b>
+                <b id="my">MY</b>
                 <h1> DASHBOARD</h1>
             </div>
         </div>
@@ -108,7 +101,56 @@
             </table>
         </div>
         <div id="content">
-            
+            <div id="left_content">
+               <div class="left-side" id="emails">
+                <p>Emails</p>
+                <hr>
+                <ul>
+                    <li>E-cell:Applications</li>
+                    <li>Research:Call for..</li>
+                    <li>Intern:Oppotunity for..</li>
+                </ul>
+               </div>
+               <div class="left-side" id="notification">
+                <p>Notifications</p>
+            <hr>
+            <ul>
+                <li>Fundae session at 9:00 pm.</li>
+                <li>tomorrow class at 10:00 am.</li>
+                <li>Sports competition this week.</li>
+            </ul>
+               </div>
+               <div class="left-side" id="clock">
+                <div id="clockpic">
+                    11:11 PM
+                 </div>
+               </div>
+               <div class="left-side" id="links">
+                <p>Important links</p>
+                <hr>
+                <a class="implink" href="https://ecell.iitm.ac.in/home" target="_main">E-cell IIT Madras</a>
+                <a class="implink" href="https://coursesnew.iitm.ac.in/" target="_main">Moodle: Courses</a>
+                <a class="implink" href="https://netaccess.iitm.ac.in/account/login" target="_main">Internet access</a>
+                <a class="implink" href="https://www.google.com/" target="_main">Google main page</a>
+               </div>
+               <div class="left-side" id="calender">
+                <p>Calender</p>
+                <hr>
+               </div>
+               <div class="left-side" id="weather">
+                <p>Weather</p>
+                <hr>
+               </div>
+            </div>
+            <div id="right_content">
+                <input id="to-do" type="text" placeholder="To do list">
+                <button id="add">Add</button>
+            </div>
+            <div id="quote">
+                <b class="quote-line">JUST TRY & DO IT!!</b>
+                
+            </div>
+            <div id="contact"></div>
         </div>
     </div>
     

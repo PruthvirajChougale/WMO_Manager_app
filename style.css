@@ -24,12 +24,12 @@
     margin-bottom:5px;
 }
 
-li{ border-radius: 10px;
+.list-items{ border-radius: 10px;
     margin:0 1.5rem 0 1.5rem;
     padding:1.5rem;
     list-style: none;
 }
-li:hover{
+.list-items:hover{
     font-size:1.07rem;  
     background-color:#e0e0e058;
 }
@@ -108,6 +108,9 @@ input{
     border-bottom-right-radius: 5px;
     border-top-right-radius: 5px;
 }
+button:active{
+    transform:scale(1.1);
+}
 
 #empty{
     flex:1;
@@ -118,7 +121,7 @@ input{
     border-bottom-right-radius: 10px;
     line-height: 20px;
 }
-b{  position:relative;
+#my{  position:relative;
     top:25px;
     font-size: 20 px;
 }
@@ -133,10 +136,9 @@ h1{
     width:100vw;
     background-color: #fff;
     border-radius: 10px;
+    margin-bottom: 1.5rem;
 }
-#budget_tracke th{
-    padding:50px;
-}
+
 #budget_tracker table{
     width:100%;
 }
@@ -148,3 +150,110 @@ tbody{
 }
 
 /* main body of dashboard */
+#content{
+    display:grid;
+    grid-template-columns: 2fr 1fr;
+    width:100vw;
+    height:700px;
+    background-color: #edebeb;
+    /* border-radius:20px; */
+}
+#right_content{
+    background-color:#fff;
+    display:flex;
+    justify-content:center;
+    /* height: 500px; */
+    border-radius:20px;
+    margin-right:1rem;
+}
+#left_content{
+    display:grid;
+    grid-template-columns:1fr 1fr 1fr;
+    grid-template-rows:1fr 1fr;
+    background-color: #edebeb;
+    text-align:start;
+}
+#quote{
+    display:flex;
+    height:200px;
+    margin:1.5rem;
+    /* background-color: #fff; */
+    border-radius:20px;
+    font-size:50px;
+    justify-content: center;
+    align-items:center;
+}
+#contact{
+    height:200px;
+    margin:1.5rem 1.5rem 1.5rem 0;
+    background-color: #fff;
+    border-radius:20px;
+}
+
+#to-do{
+    position:relative;
+    top:25px;
+}
+#add{
+    height:1.6rem;
+    width:35px;
+    position:relative;
+    top:25px;
+    background-color:#f1758a;
+    border:none;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+.left-side{
+    border-radius:20px;
+    margin-right:1.5rem;
+    background-color: #fff;
+}
+#emails{
+    margin-bottom:1.5rem;
+    margin-left:1rem;
+    background-color: rgb(250, 197, 250);
+}
+#notification{
+   margin-bottom:1.5rem;
+   background-color: rgb(190, 247, 247);
+}
+#clock{
+    display:flex;
+    justify-content: center;
+    align-items:center;
+   margin-bottom:1.5rem;
+   
+}
+#clockpic{
+    display:flex;
+    height:200px;
+    width:200px;
+    padding:4srem;
+    border-radius:50%;
+    border:20px solid #edebeb;
+    border-top-color:#f1758a;
+    font-size: 25px;
+    align-items: center;
+    justify-content: center;
+}
+#links{
+    margin-left:1rem;
+    background-color: rgb(251, 220, 180);
+}
+.implink{
+    display:block;
+    padding:1rem 0 0 0.5rem;
+    text-decoration:none;
+}
+.implink:hover{
+    color:rgb(74, 74, 247);
+}
+li{
+    list-style: none;
+    padding-top: 1rem;
+    padding-left: 1rem;
+}
+p{  padding:0.5rem;
+    text-align:center;
+}
