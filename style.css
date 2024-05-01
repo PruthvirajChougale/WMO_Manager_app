@@ -269,3 +269,14 @@ li{
 p{  padding:0.5rem;
     text-align:center;
 }
+#temperature{
+    display: flex;
+    justify-content: space-around;
+}
+#sun{
+    color:rgb(255, 196, 0);
+    font-size:50px;
+}
+#calender table{
+    width:100%;
+}
