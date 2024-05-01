@@ -156,14 +156,10 @@ tbody{
     width:100vw;
     height:700px;
     background-color: #edebeb;
-    /* border-radius:20px; */
 }
 #right_content{
-    background-color:#fff;
     display:flex;
-    justify-content:center;
-    /* height: 500px; */
-    border-radius:20px;
+    flex-direction: column;
     margin-right:1rem;
 }
 #left_content{
@@ -173,11 +169,12 @@ tbody{
     background-color: #edebeb;
     text-align:start;
 }
+
+/* quote just do it */
 #quote{
     display:flex;
     height:200px;
     margin:1.5rem;
-    /* background-color: #fff; */
     border-radius:20px;
     font-size:50px;
     justify-content: center;
@@ -185,7 +182,7 @@ tbody{
     
 }
 .quote-line{
-    animation:animate 5s ease-in-out 0s infinite alternate;
+    animation:animate 3s ease-in-out 0s infinite alternate;
 }
 @keyframes animate{
     from{
@@ -195,13 +192,42 @@ tbody{
         color:#f1758a;
     }
 }
-#contact{
+
+/* my apps */
+#app{
     height:200px;
-    margin:1.5rem 1.5rem 1.5rem 0;
+    margin:1.5rem 1rem 1.5rem 0;
     background-color: #fff;
     border-radius:20px;
 }
+#appgrid, #contactgrid{
+    display:grid;
+    grid-template-columns: 1fr 4fr;
+    align-items: center;
+    justify-content:start;
+}
+.grid-icon{
+    font-size: 40px;
+    margin-left:1rem;
+}
+#wh-icon{
+    color:green;
+}
+#insta-icon{
+    color:rgb(255, 38, 0);
+}
 
+/* my to do list */
+#mytodo{
+height: 150px;
+margin-bottom:1.5rem;
+width:100%;
+background-color:#fff;
+display:flex;
+justify-content:center;
+border-radius:20px;
+
+}
 #to-do{
     position:relative;
     top:25px;
@@ -216,6 +242,41 @@ tbody{
     border-top-right-radius: 5px;
     border-bottom-right-radius: 5px;
 }
+
+/* my progress bar */
+#myprogress{
+    flex:1;
+    background-color: #fff;
+    border-radius:20px;
+}
+#progressgrid{
+    grid-template-rows:1fr 1fr 1fr;
+}
+.progressbar{
+    height: 15px;
+    margin:0 20% 0 20%;
+    background-color: #edebeb;
+    border-radius:15px;
+}
+#fitnesspro{
+    display:grid;
+    grid-template-columns: 2fr 1fr;
+}
+#academicspro{
+    display:grid;
+    grid-template-columns: 5fr 1fr;
+
+}
+#funpro{
+    display:grid;
+    grid-template-columns: 4fr 1fr;
+}
+.colorpro{
+    background-color: #f1758a;
+    border-radius:15px;
+}
+
+/* content present on left side */
 .left-side{
     border-radius:20px;
     margin-right:1.5rem;
