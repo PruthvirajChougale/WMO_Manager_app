@@ -341,3 +341,23 @@ p{  padding:0.5rem;
 #calender table{
     width:100%;
 }
+
+/* Madia queries */
+@media (min-width:875px) {
+    #content{
+        grid-template-columns:2fr 1fr;
+    }
+}
+@media (min-width:691px) and (max-width:880px){
+    #content{
+        grid-template-columns:1fr;
+    }
+}
+@media (max-width:690px){
+    #content{
+        grid-template-columns:1fr;
+    }
+    #left_content{
+            grid-template-columns:1fr;
+    }   
+}
